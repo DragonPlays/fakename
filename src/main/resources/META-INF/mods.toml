@@ -1,5 +1,5 @@
 modLoader="javafml" #mandatory
-loaderVersion="[46,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[47,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 license="All rights reserved"
 
 [[mods]] #mandatory
@@ -7,7 +7,7 @@ license="All rights reserved"
 	version="${file.jarVersion}" #mandatory
 	displayName="Fakename" #mandatory
 	logoFile="logo.png" #optional
-	authors="Tschipp" #optional
+	authors="Tschipp, ezTxmMC" #optional
 	# The description text for the mod (multi line!) (#mandatory)
 	description="Fakename adds a way to change the name of players."
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
@@ -17,7 +17,7 @@ license="All rights reserved"
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[46,47.1.3]" #mandatory
+    versionRange="[47.3.0,47.3.10]" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER

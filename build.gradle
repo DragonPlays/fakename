@@ -9,6 +9,7 @@ plugins {
     id 'eclipse'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
@@ -32,7 +33,7 @@ mixin {
 
 
 minecraft {
-    mappings channel: 'official', version: "1.19.2"
+    mappings channel: 'official', version: "1.20.1"
 
     runs {
         client {
@@ -102,7 +103,7 @@ jar {
         attributes([
             "Specification-Title": "fakename",
             "Specification-Vendor": "Fakename",
-            "Specification-Version": "1", // We are version 1 of ourselves
+            "Specification-Version": "2", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"Fakename",
